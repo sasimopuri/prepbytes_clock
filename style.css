@@ -107,3 +107,66 @@ body{
     letter-spacing: 0px;
     color: #FFFFFF;
 }
+
+.quote{
+    width: 536px;
+    height: 118px;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    position: absolute;
+    top: 212px;
+    left: 706px;
+}
+.quote-text{
+    position: relative;
+    top: 40px;
+    bottom: 40px;
+    left: 20px;
+    right: 20px;
+    font-family: 'Manrope';
+    font: normal normal 900 28px Bauhaus Hv BT;
+    letter-spacing: 0px;
+    color: #8E53F0;
+    text-align: left;
+    
+}
+
+#dropdown{
+    position: relative;
+    top: 14px;
+    left: 261px;
+    width: 281px;
+    height: 45px;
+}
+
+#dropdown:hover{
+    cursor: pointer;
+}
+
+.alarmcontainer{
+    position: absolute;
+    top: 149px;
+    left: 124px;
+    width: 566px;
+    height: 363px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+}
+.wake_up{
+    position: relative;
+    top: 20px;
+    left: 25px;
+    width: 34px;
+    height: 34px;
+}
+.lunch_time{
+    position: relative;
+    top: 117px;
+    left: 25px;
+}
+.lunchsvg{
+    width: 34px;
+    height: 34px;
+}
