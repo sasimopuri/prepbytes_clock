@@ -1,0 +1,91 @@
+*{
+    
+    font-family: 'Manrope';
+}
+body{
+    background-color: #3d087b;
+}
+#clockimg{
+    position: absolute;
+    top: 34px;
+    left: 124px;
+    width: 204px;
+    height: 77px;
+}
+
+.transparent{
+    position: absolute;
+    width: 379px;
+    height: 130px;
+    top: 67px;
+    left: 785px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 0.22;
+}
+
+.mildtransparent{
+    position: absolute;
+    top: 55px;
+    left: 766px;
+    width: 416px;
+    height: 130px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 0.71;
+}
+
+.mainblock_time{
+    position: absolute;
+    top: 42px;
+    left: 706px;
+    width: 536px;
+    height: 130px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 1;
+    background-color: #FFFFFF;
+    
+}
+
+/* .time_section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 25px;
+    left: 39px;
+}
+
+ .time_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+} 
+
+.time_block_text, .colon, .digit, .time_text_block , .time_text{
+    background-color: #FFFFFF;
+}
+
+.time_block_text{
+    font-size: 23px;
+}
+
+.digit, .colon{
+    font-size: 36px;
+}
+.time_text{
+    font-size: 20px;
+}
+
+.time_text_block{
+    position: relative;
+    top: 32px;
+}
+
+.time_mins_block{
+    background-image: url(assets/timeline.svg);
+} */
