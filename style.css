@@ -1,5 +1,4 @@
 *{
-    
     font-family: 'Manrope';
 }
 body{
@@ -49,43 +48,62 @@ body{
     
 }
 
-/* .time_section{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #FFFFFF;
-    position: absolute;
-    top: 25px;
+.insideblock{
+    position: relative;
     left: 39px;
+    right: 39px;
+    width: 458px;
+    height: 90px;
+    top: 20px;
+    bottom: 20px;
+    display: flex;
+    column-gap: 8px;
+    
 }
 
- .time_block{
+.box{
+    width: 80px;
+    height: 90px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
-    
-} 
-
-.time_block_text, .colon, .digit, .time_text_block , .time_text{
-    background-color: #FFFFFF;
-}
-
-.time_block_text{
-    font-size: 23px;
-}
-
-.digit, .colon{
-    font-size: 36px;
-}
-.time_text{
-    font-size: 20px;
-}
-
-.time_text_block{
-    position: relative;
-    top: 32px;
-}
-
-.time_mins_block{
     background-image: url(assets/timeline.svg);
-} */
+    
+}
+.box-time{
+    background-image: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: #3D087B;
+}
+.box-colon{
+    position: relative;
+    width: 4.21px;
+    height: 22.41px;
+    font-size: 36px;
+    top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.am-pm{
+    background-image: url(assets/AM_svg.svg);
+}
+
+.digit{
+    font-size: 36px;
+    letter-spacing: 0px;
+    color: #8A11BF;
+}
+.text{
+    font-size: 23px;
+    letter-spacing: 0px;
+    color: #5F0089;
+}
+
+.am-pm{
+    font-size: 36px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}

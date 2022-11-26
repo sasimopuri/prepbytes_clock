@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <img src="assets/clock_logo.png" alt="clock" id="clockimg">
@@ -13,38 +18,25 @@
     <div class="transparent"></div>
     <div class="mildtransparent"></div>
     <section class="mainblock_time">
-        <!-- <div class="time_section">
-            <section class="time_text_block">
-                <div class="time_text">TIME</div>
-            </section>
-
-            <section class="time_hour_block time_block">
-                <div class="digit">12</div>
-                <div class="time_block_text">hours</div>
-            </section>
-
-            <section class="time_block">
-                <div class="colon">:</div>
-            </section>
-            
-            <section class="time_mins_block time_block">
-                <div class="digit">00</div>
-                <div class="time_block_text">mins</div>
-            </section>
-
-            <section class="time_block">
-                <div class="colon">:</div>
-            </section>
-
-            <section class="time_secs_block time_block">
-                <div class="digit">01</div>
-                <div class="time_block_text">mins</div>
-            </section>
-
-            <section class="time_am_pm time_block">
-                <div class="digit">PM</div>
-            </section>
-        </div> -->
+        <div class="insideblock">
+            <div class="box box-time">TIME</div>
+            <div class="box">
+                <span class="digit">12</span>
+                <span class="text">hours</span>
+            </div>
+            <div class="box-colon">:</div>
+            <div class="box">
+                <span class="digit">12</span>
+                <span class="text">mins</span>
+            </div>
+            <div class="box-colon">:</div>
+            <div class="box">
+                <span class="digit">12</span>
+                <span class="text">secs</span>
+            </div>
+            <div class="box-colon">:</div>
+            <div class="box am-pm">AM</div>
+        </div>
     </section>
     </div>
 
