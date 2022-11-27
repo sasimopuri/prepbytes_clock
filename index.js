@@ -5,7 +5,7 @@ function update(){
     let mins=date.getMinutes();
     let secs=date.getSeconds();
     let session; //AM or PM
-    var hours24=date.getHours();
+    window.hours24=date.getHours();
 
     if(hours>12){
         session='PM';
@@ -71,21 +71,47 @@ function update(){
 
 function setalarm(){
 
-    function updatetime(){
-        var hours24='da'
-    }
     let wakeup=document.querySelector('#dropdown-wakeup');
     let wakeuphour= wakeup.options[wakeup.options.selectedIndex].value;
     let lunch=document.querySelector('#dropdown-lunch');
-    let lunchhour= wakeup.options[lunch.options.selectedIndex].value;
+    let lunchhour= lunch.options[lunch.options.selectedIndex].value;
     let naptime=document.querySelector('#dropdown-naptime');
-    let naptimehour= naptime.options[wakeup.options.selectedIndex].value;
+    let naptimehour= naptime.options[naptime.options.selectedIndex].value;
     let nighttime=document.querySelector('#dropdown-nighttime');
-    let nighttimehour= nighttime.options[wakeup.options.selectedIndex].value;
+    let nighttimehour= nighttime.options[nighttime.options.selectedIndex].value;
      
-    console.log(hours24);
     
+    if(nighttimehour==hours24)
+        updatepicture('nighttime');
+    if(naptimehour==hours24)
+        updatepicture('naptime');
+    if(lunchhour==hours24)
+        updatepicture('lunch');
+    if(wakeuphour==hours24)
+        updatepicture('wakeup');
+}
 
+function updatepicture(time){
+    let imgcontainer=document.querySelector('.imgcontainer');
+    let quotetext=document.querySelector('.quote-text')
+    switch(time){
+        case 'wakeup':
+            imgcontainer.innerHTML=`<img src="assets/Component 30 – 1 (1).svg" alt=""> `
+            quotetext.innerHTML=`GRAB SOME HEALTHY BREAKFAST!!!`
+            break;
+        case 'lunch':
+            imgcontainer.innerHTML=`<img src="assets/Group 5183.svg" alt="">`;
+            quotetext.innerHTML=`LET'S HAVE SOME LUNCH !!`
+            break;
+        case 'naptime':
+            imgcontainer.innerHTML=`<img src="assets/lunch_image.png" alt="">`
+            quotetext.innerHTML=`STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!`
+            break;
+        case 'nighttime':
+            imgcontainer.innerHTML=`<img src="assets/Group 5194.svg" alt="">`;
+            quotetext.innerHTML=`CLOSE YOUR EYES AND GO TO SLEEP`;
+            break
+    }
 }
 
 update()
