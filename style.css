@@ -279,10 +279,42 @@ option{
 
 .setalarm:hover{
     cursor: pointer;
+    
 }
-
+.setalarm:active {
+    transform: translateY(2px);
+  }
 .imgcontainer{
     position: relative;
     top: 345px;
     left: 702px;
 }
+
+.alarmdetails{
+    position: absolute;
+    top: 615px;
+    left: 437px;
+    width: 253px;
+    height: 117px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 0.23;
+}
+.alarmdetails-text{
+    position: absolute;
+    top: 625px;
+    left: 449px;
+    width: 200px;
+    height: 94px;
+    text-align: left;
+    font: normal normal bold 13px Manrope;
+    letter-spacing: 0px;
+    color: #F25CFE;
+    opacity: 1;
+    
+}
+p{
+    margin: 5px;
+}
+

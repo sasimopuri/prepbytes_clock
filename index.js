@@ -79,8 +79,18 @@ function setalarm(){
     let naptimehour= naptime.options[naptime.options.selectedIndex].value;
     let nighttime=document.querySelector('#dropdown-nighttime');
     let nighttimehour= nighttime.options[nighttime.options.selectedIndex].value;
-     
-    
+
+    let alarmdetails=document.querySelector('.alarmdetails-text');
+    let wakeupdetail=wakeup.options[wakeup.options.selectedIndex].innerHTML;
+    let lunchdetail=lunch.options[lunch.options.selectedIndex].innerHTML;
+    let napdetail=naptime.options[naptime.options.selectedIndex].innerHTML;
+    let nightdetail=nighttime.options[nighttime.options.selectedIndex].innerHTML;
+
+    alarmdetails.innerHTML=`<p>Wake Up Time : ${wakeupdetail} </p>
+                            <p>Lunch Time : ${lunchdetail} </p>
+                            <p>Nap Time : ${napdetail} </p>
+                            <p>Night Time : ${nightdetail} </p>`
+
     if(nighttimehour==hours24)
         updatepicture('nighttime');
     if(naptimehour==hours24)
@@ -89,6 +99,10 @@ function setalarm(){
         updatepicture('lunch');
     if(wakeuphour==hours24)
         updatepicture('wakeup');
+
+    setTimeout(()=>{
+        setalarm()
+    },1000)
 }
 
 function updatepicture(time){
