@@ -5,6 +5,7 @@ function update(){
     let mins=date.getMinutes();
     let secs=date.getSeconds();
     let session; //AM or PM
+    var hours24=date.getHours();
 
     if(hours>12){
         session='PM';
@@ -26,6 +27,7 @@ function update(){
         secs='00'
     }
     
+
     timecontainer.innerHTML=`<div class="insideblock">
         <div class="box box-time">TIME</div>
         <div class="box">
@@ -46,16 +48,45 @@ function update(){
         <div class="box am-pm">${session}</div>
         </div>`
 
+        let greetings=document.querySelector('.greetings-text');
+        if(hours24>=4 && hours24<=11)
+        {
+            greetings.innerHTML=`GOOD MORNING!! WAKE UP!!`
+        }
+        else if(hours24>11 && hours24<18){
+            greetings.innerHTML=`GOOD AFTERNOON !! TAKE SOME SLEEP`
+        }
+        else if(hours24>=18 && hours24<=20){
+            greetings.innerHTML=`GOOD EVENING !!`
+        }   
+        else{
+            greetings.innerHTML=`GOOD NIGHT !!`
+        }
+
     setTimeout(()=>{
         update()
     },1000)
-
     
+}
+
+function setalarm(){
+
+    function updatetime(){
+        var hours24='da'
+    }
+    let wakeup=document.querySelector('#dropdown-wakeup');
+    let wakeuphour= wakeup.options[wakeup.options.selectedIndex].value;
+    let lunch=document.querySelector('#dropdown-lunch');
+    let lunchhour= wakeup.options[lunch.options.selectedIndex].value;
+    let naptime=document.querySelector('#dropdown-naptime');
+    let naptimehour= naptime.options[wakeup.options.selectedIndex].value;
+    let nighttime=document.querySelector('#dropdown-nighttime');
+    let nighttimehour= nighttime.options[wakeup.options.selectedIndex].value;
+     
+    console.log(hours24);
+    
+
 }
 
 update()
 
-function setalarm(){
-    let valuee=document.querySelector('#dropdown-wakeup');
-    console.log(valuee[valuee.options.selectedIndex].value);
-}

@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/1bb28440d44596129c2c67bb9f94eae3?family=Bauhaus+Hv+BT);
 *{
     font-family: 'Manrope';
 }
@@ -185,7 +186,7 @@ body{
     border-radius: 4px;
     bottom: 11px;
     left: 40px;
-    width: 201px;
+    width: 281px;
     height: 45px;
     letter-spacing: 0.25px;
     color: #3D087BDE;
@@ -232,4 +233,56 @@ option{
 
 #dropdown-nighttime{
     left: 65px;
+}
+
+.greetings{
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 0.23;
+        
+    top: 527px;
+    left: 124px;
+    width: 566px;
+    height: 77px;
+}
+.greetings-text{
+    position: absolute;
+    text-align: left;
+    font: normal normal 900 27px/34px Bauhaus Hv BT;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    top: 549px;
+    left: 149px;
+        
+}
+.setalarm{
+    position: absolute;
+    top: 624px;
+    left: 124px;
+    width: 299px;
+    height: 50px;
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    border: none;
+    text-align: left;
+    font: normal normal 600 24px/38px Manrope;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+.setalarm:hover{
+    cursor: pointer;
+}
+
+.imgcontainer{
+    position: relative;
+    top: 345px;
+    left: 702px;
 }
