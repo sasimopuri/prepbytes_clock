@@ -28,11 +28,70 @@
         <div class="quote-text">GRAB SOME HEALTHY BREAKFAST!!!</div>
     </section>
 
+    
     <div class="alarmcontainer">
-        <div class="wake_up"><img src="assets/wake_up.svg" alt="wake_up" id="wakesvg"></div>
-        <div class="lunch_time"><img src="assets/lunch_time.svg" alt="lunch_time" id="luchsvg"></div>
-    <select name="option" id="dropdown">
-        <option value="00">00 AM - 01 AM</option>
+        <div class="wakeup">
+            <span><img src="assets/wake_up.svg" alt="wake_up" id="wakesvg"></span>
+            <span class="wakeup-text">Set wake up time</span>
+            <select name="option" id="dropdown-wakeup">
+                <option value="05">05 AM - 06 AM</option>
+                <option value="06">06 AM - 07 AM</option>
+                <option value="07">07 AM - 08 AM</option>
+                <option value="08">08 AM - 09 AM</option>
+                <option value="09">09 AM - 10 AM</option>
+            </select>
+        </div>
+        <!-- Lunch -->
+    
+        <div class="lunch">
+            <span><img src="assets/lunch_time.svg" alt="lunch" id="lunchsvg"></span>
+            <span class="lunch-text">Set lunch time</span>
+            <select name="option" id="dropdown-lunch">
+                <option value="12">12 PM - 01PM</option>
+                <option value="13">01 PM - 02PM</option>
+                <option value="14">02 PM - 03PM</option>
+                <option value="15">03 PM - 04PM</option>
+            </select>
+        </div>
+        <!-- nap-time -->
+
+        <div class="naptime">
+            <span><img src="assets/nap_time.svg" alt="nap-time" id="nap-time"></span>
+            <span class="naptime-text">Set nap time</span>
+            <select name="option" id="dropdown-naptime">
+                <option value="17">05 PM - 06PM</option>
+                <option value="18">06 PM - 07PM</option>
+                <option value="19">07 PM - 08PM</option>
+                <option value="20">08 PM - 09PM</option>
+            </select>
+        </div>
+
+        <!-- night time -->
+        <div class="nighttime">
+            <span><img src="assets/nap_time.svg" alt="nap-time" id="night-time"></span>
+            <span class="nighttime-text">Set night time</span>
+            <select name="option" id="dropdown-nighttime">
+                <option value="21">09 PM - 10PM</option>
+                <option value="22">10 PM - 11PM</option>
+                <option value="23">11 PM - 12AM</option>
+                <option value="00">12 AM - 01 AM</option>
+                <option value="01">01 AM - 02 AM</option>
+                <option value="02">02 AM - 03 AM</option>
+            </select>
+        </div>
+
+    </div>
+
+    
+
+    </div>
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>
+
+<!-- <option value="00">00 AM - 01 AM</option>
         <OPTION value="01">01 AM - 02 AM</OPTION>
         <OPTION value="02">02 AM - 03 AM</OPTION>
         <OPTION value="03">03 AM - 04 AM</OPTION>
@@ -55,15 +114,4 @@
         <option value="20">08 PM - 09PM</option>
         <option value="21">09 PM - 10PM</option>
         <option value="22">10 PM - 11PM</option>
-        <option value="23">11 PM - 12AM</option>
-    </select>
-    </div>
-
-
-    </div>
-
-    <script src="index.js"></script>
-    
-    
-</body>
-</html>
+        <option value="23">11 PM - 12AM</option> -->

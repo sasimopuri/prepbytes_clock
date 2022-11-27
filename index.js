@@ -9,7 +9,6 @@ function update(){
     if(hours>12){
         session='PM';
         hours-=12
-        console.log(hours);
     }
     else if(hours==12){
         session='PM'
@@ -56,3 +55,7 @@ function update(){
 
 update()
 
+function setalarm(){
+    let valuee=document.querySelector('#dropdown-wakeup');
+    console.log(valuee[valuee.options.selectedIndex].value);
+}
